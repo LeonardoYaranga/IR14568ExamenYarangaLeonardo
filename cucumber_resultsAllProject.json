@@ -1,0 +1,222 @@
+[
+  {
+    "uri": "features/requisitoGestionSoporte.feature",
+    "id": "gesti\u00f3n-de-soporte",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Gesti\u00f3n de Soporte",
+    "description": "",
+    "elements": [
+      {
+        "id": "agregar-soporte-y-verificar-su-existencia",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "Abrir navegador de gesti\u00f3n de soporte",
+            "result": {
+              "status": "passed",
+              "duration": 1.9801607131958008
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "agrego un soporte con los siguientes datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.9593679904937744
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 8,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista",
+            "result": {
+              "status": "passed",
+              "duration": 0.17902278900146484
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte-con-campos-incompletos-y-validar-errores",
+        "line": 10,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte con campos incompletos y validar errores",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 11,
+            "name": "Abrir navegador de gesti\u00f3n de soporte con campos incompletos y validar errores",
+            "result": {
+              "status": "passed",
+              "duration": 1.759127140045166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 12,
+            "name": "intento agregar un soporte con los siguientes datos incompletos",
+            "result": {
+              "status": "passed",
+              "duration": 0.9007716178894043
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 15,
+            "name": "deber\u00eda ver un mensaje de error indicando campos obligatorios",
+            "result": {
+              "status": "passed",
+              "duration": 0.5434300899505615
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 16,
+            "name": "el soporte \"Soporte 1\" no deber\u00eda estar en la lista",
+            "result": {
+              "status": "passed",
+              "duration": 2.4330615997314453
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte-y-verificar-su-existencia-y-eliminarlo",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia y eliminarlo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 1.9092166423797607
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "agrego un soporte con los siguientes datos para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 1.0166561603546143
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.18867945671081543
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 24,
+            "name": "eliminar soporte creado",
+            "result": {
+              "status": "passed",
+              "duration": 0.2931818962097168
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 25,
+            "name": "verificar que el soporte ha sido eliminado",
+            "result": {
+              "status": "passed",
+              "duration": 2.403291940689087
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte,-intentar-eliminarlo,-y-cancelar-la-eliminaci\u00f3n",
+        "line": 28,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte, intentar eliminarlo, y cancelar la eliminaci\u00f3n",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 29,
+            "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar y cancelar eliminacion",
+            "result": {
+              "status": "passed",
+              "duration": 5.715338945388794
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 30,
+            "name": "agrego un soporte con los siguientes datos para eliminar y cancelar eliminacion",
+            "result": {
+              "status": "passed",
+              "duration": 1.142850637435913
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 33,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar y cancelar la eliminacion",
+            "result": {
+              "status": "passed",
+              "duration": 0.20540690422058105
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 34,
+            "name": "intento eliminar soporte pero cancelo la eliminaci\u00f3n",
+            "result": {
+              "status": "failed",
+              "duration": 0.09212398529052734
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 35,
+            "name": "verificar que el soporte a\u00fan est\u00e1 en la lista despu\u00e9s de cancelar",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

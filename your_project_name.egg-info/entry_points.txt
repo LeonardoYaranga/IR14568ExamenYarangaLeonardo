@@ -1,0 +1,2 @@
+[behave.formatter]
+jira_formatter = features.formatters.jira_formatter:JIRAFormatter
