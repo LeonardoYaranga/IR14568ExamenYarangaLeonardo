@@ -63,5 +63,5 @@ with open('results.json', 'r') as file:
 
 cucumber_js_json = adapt_behave_to_cucumberjs(behave_json)
 
-with open('cucumber_resultsAllProject.json', 'w') as file:
+with open('cucumber_results.json', 'w') as file:
     json.dump(cucumber_js_json, file, indent=2)
